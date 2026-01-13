@@ -1,3 +1,8 @@
+This is a Proof of Concept of Aurora store for Wear OS
+The UI/UX is not going to be great
+I am testing this on a 40mm Samsung Galaxy Watch7 on One UI 8 Watch/Wear OS 6, Your results may be different than mine
+
+
 # Aurora Store
 
 Aurora Store enables you to search and download apps from the official Google Play store. You can check app descriptions, screenshots, updates, reviews, and download the APK directly from Google Play to your device. 
