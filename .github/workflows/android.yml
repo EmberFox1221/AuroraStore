@@ -24,7 +24,6 @@ jobs:
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
-      uploadDebug:
     - name: upload
        image: curlimages/curl:latest
        run: 'curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file ${DEBUG_BINARY_PATH} ${PACKAGE_REGISTRY_URL}/${DEBUG_BINARY}'
