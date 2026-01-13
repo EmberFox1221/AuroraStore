@@ -18,11 +18,12 @@ jobs:
       with:
         java-version: '11'
         distribution: 'temurin'
-        cache: gradle
+        cache: grad
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
     - name: Build with Gradle
       run: ./gradlew build
+      
     - name: upload
-       run: 'curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file ${DEBUG_BINARY_PATH} ${PACKAGE_REGISTRY_URL}/${DEBUG_BINARY}'
+      run: curl --header "JOB-TOKEN: ${CI_JOB_TOKEN}" --upload-file ${DEBUG_BINARY_PATH} ${PACKAGE_REGISTRY_URL}/${DEBUG_BINARY}
